@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="SOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<target>System.out</target>
+		<encoder>
+			<charset>UTF-8</charset>
+			<pattern>%green(%d{HH:mm:ss`SSS}) [%-20thread] %highlight(%5level) %cyan(%logger) %magenta(-) %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="SOUT" />
+	</root>
+	<logger level="TRACE" name="ru.white_logic"/>
+</configuration>
